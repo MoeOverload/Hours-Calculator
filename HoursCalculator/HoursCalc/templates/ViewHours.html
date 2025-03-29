@@ -1,0 +1,50 @@
+{%extends "layout.html"%}
+
+
+
+{%block title%}
+
+View Hours
+
+{%endblock%}
+
+
+
+{%block content%}
+<div style="text-align:center">
+    <h2> View Hours Page  </h2>
+    <p>a page to view the selected date hours</p>
+</div>
+<hr>
+<div>
+    <h3>(time of pay period)</h3>
+</div>
+<div>
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Jobsite</th>
+            <th>Start Time</th>
+            <th>Lunch Breaks</th>
+            <th>End Time</th>
+            <th>Total Hours</th>
+        </tr>
+        
+        <tr>
+            <td>example date</td>
+            <td>example job</td>
+            <td>example start</td>
+            <td>example lunch</td>
+            <td>example end</td>
+            <td>example total</td>
+        </tr> 
+    </table>
+</div>
+<hr>
+<div>
+    TODO:
+    create an if statement for if the view is a finished hours sheet 
+    else render an edit button 
+</div>
+
+{%endblock%}

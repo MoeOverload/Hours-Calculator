@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> layout {%block title%}{%endblock%}</title>
+    </head>
+    <body>
+        <div style = "text-align:center">
+            <h1>Hours Calulator</h1>
+        </div>
+        <hr>
+        <div>
+            <h2>Index</h2>
+            <nav>
+                <a href="{%url 'Home'%}">Home</a>|
+                <a href="{%url 'View'%}">view</a>|
+                <a href="{%url 'Add'%}">create</a>|  
+            </nav>
+        </div>
+        <hr>
+        <div>
+            {%block content%}
+
+            {%endblock%}
+        </div>
+        
+    </body>
+</html>
