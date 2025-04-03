@@ -1,0 +1,45 @@
+{%extends "layout.html"%}
+
+
+
+{%block title%}
+
+Create Account
+
+{%endblock%}
+
+
+
+{%block content%}
+    <div style="text-align:center">
+        <h2>Login:</h2>
+    </div>
+    <hr> 
+    <div style="text-align:left">
+        <form action="{%url 'CreateUser'%}" method="post">
+            {%csrf_token%}
+            <label>Email: </label><br>
+            <input type="email" name="Email">
+            <label>Username:</label><br>
+            <input type="text" name="Username">
+            <br>
+            <label>Password:</label><br>
+            <input type="password" name="Password">
+            <br>
+            <label>Confirm Password:</label><br>
+            <input type="password" name="Confimation">
+            <br>
+            <br>
+            <input type="submit" value="create account">
+        </form>
+        <div>
+            <h5>already have an account? <a href="{%url 'Login'%}">login</a> </h5>
+        </div>
+    </div>
+    <hr>
+    
+
+    
+    
+
+{%endblock%}

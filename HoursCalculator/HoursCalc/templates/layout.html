@@ -3,25 +3,28 @@
     <head>
         <title> layout {%block title%}{%endblock%}</title>
     </head>
-    <body>
-        <div style = "text-align:center">
-            <h1>Hours Calulator</h1>
-        </div>
-        <hr>
-        <div>
-            <h2>Index</h2>
-            <nav>
-                <a href="{%url 'Home'%}">Home</a>|
-                <a href="{%url 'View'%}">view</a>|
-                <a href="{%url 'Add'%}">create</a>|  
-            </nav>
-        </div>
-        <hr>
-        <div>
-            {%block content%}
+    <body style="background-color:rgb(185, 213, 224)">
+        <div >
+           <div style = "text-align:center">
+                <h1>Hours Calulator</h1>
+            </div>
+            <hr>
+            <div>
+                <h2>Index</h2>
+                <nav>
+                    |<a href="{%url 'Home'%}">Home</a>|
+                    <a href="{%url 'View'%}">Timesheets</a>|
+                    <a href="{%url 'Add'%}">Add Hours</a>|
+                    <a href="{%url 'Login'%}">Login</a>|
+                    <a href="{%url 'Create Account'%}">Create Account</a> |
+                </nav>
+            </div>
+            <hr>
+            <div >
+                {%block content%}
 
-            {%endblock%}
+                {%endblock%}
+            </div>
         </div>
-        
     </body>
-</html>
+</html> 

@@ -1,0 +1,39 @@
+{%extends "layout.html"%}
+
+
+
+{%block title%}
+
+Login
+
+{%endblock%}
+
+
+
+{%block content%}
+    <div style="text-align:center">
+        <h2>Login:</h2>
+    </div>
+    <hr> 
+    <div style="text-align:left">
+        <form>
+            <label>Email: </label><br>
+            <input type="email">
+            <br>
+            <label>Password:</label><br>
+            <input type="password">
+            <br>
+            <br>
+            <input type="submit" value="Login">
+        </form>
+        <div>
+            <h5>don't have an account? <a href="{%url 'Create Account'%}">create account</a> </h5>
+        </div>
+    </div>
+    <hr>
+    
+
+    
+    
+
+{%endblock%}
